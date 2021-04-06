@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<style type="text/css">
+	    * {
+	    	font-family: arial;
+	    }
+
+	    .button_margin {
+	    	margin-top: 20px;
+	    }
+	</style>
+</head>
+<body>
+	<h2 align="center">Belajar Form</h2>
+	<hr>
+	<br>
+	<form action="#" method="post">
+		<table>
+			<tr>
+				<td>
+					<label>Nama</label>
+				</td>
+				<td>:</td>
+				<td><input type="text" name="txtnama"></td>
+			</tr>
+			<tr>
+				<td>
+					<label>Nim</label>
+				</td>
+				<td>:</td>
+				<td><input type="text" name="txtnim" placeholder="Masukkan Nim Anda"></td>
+			</tr>
+			<tr>
+				<td>
+					<label>Jenis Kelamin</label>
+				</td>
+				<td>:</td>
+				<td>
+				<input type="radio" name="rbjk" value="L"> Laki - Laki
+				<input type="radio" name="rbjk" value="P"> Perempuan</td>
+			</tr>
+			<tr>
+				<td><label for="Jurusan">Jurusan</label></td>
+				<td>:</td>
+				<td>
+					<select name="Jurusan" id="Jurusan">
+		     			<option value="ILKOM">ILKOM</option>
+		     			<option value="RPL">RPL</option>
+		     			<option value="SI">SI</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Hoby</label>
+				</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" name="hobby" value="k">Komputer
+					<input type="checkbox" name="hobby" value="m">Music
+					<input type="checkbox" name="hobby" value="o">Olahraga
+					<input type="checkbox" name="hobby" value="t">Traveling
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Catatan</label>
+				</td>
+				<td>:</td>
+				<td><textarea name="txtcatatan" id="cttn" cols="30" rows="5"></textarea></td>
+			</tr>
+			<tr>
+				<td>
+				<label>Foto</label>	
+				</td>
+				<td>:</td>
+				<td>
+					<input type="file" name="img" accept="image/*">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Email</label>
+				</td>
+				<td>:</td>
+				<td>
+					<input type="email" name="email">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Sandi Login</label>
+				</td>
+				<td>:</td>
+				<td>
+					<input type="Password" name="pwd">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Ulangi Sandi Login</label>
+				</td>
+				<td>:</td>
+				<td>
+					<input type="Password" name="pwdrpt">
+				</td>
+			</tr>
+				
+			</td>
+		</table>
+
+		<input class="button_margin" type="submit" name="submit" value="Simpan Data">
+        <input type="reset" name="reset" value="Reset">
+	</form>
+</body>
+</html>
